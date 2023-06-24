@@ -1,0 +1,23 @@
+what is the differece between variable n and m
+int arr[] = { 10, 7, 8, 9, 1, 5 };
+int n = sizeof(arr) / sizeof(arr[0]);
+int m=sizeof(arr);
+In the given code, n and m are both variables that are used to store information about the arr array. However, they store different information:
+
+n stores the number of elements in the arr array. It is calculated by dividing the total size of the array in bytes by the size of one element in bytes, using the sizeof operator.
+
+m stores the total size of the arr array in bytes. It is calculated using the sizeof operator, which returns the total size of the array in bytes.
+
+So, in the given code, n would have the value 6, which is the number of elements in the arr array, while m would have the value 24 (assuming that int is 4 bytes), which is the total size of the arr array in bytes.
+
+What is the output of the following c++ code:
+char arr[] = {"Ahmed"};
+int n = sizeof(arr) / sizeof(arr[0]);
+int m=sizeof(arr);
+The output of the given C++ code will not be printed to the console, as there is no cout statement to output any values.
+
+However, the code will assign the value of 6 to the variable n and the value of 7 to the variable m.
+
+The variable n is calculated by dividing the size of the arr array in bytes by the size of one element in the array (which is the size of a single character in this case). Since arr has 6 elements (including the null character at the end), dividing the total size of the array (which is 7 bytes) by the size of one element (which is 1 byte) gives a result of 6.
+
+The variable m is assigned the size of the arr array in bytes, which is 7. This is because the sizeof operator returns the total number of bytes occupied by the array, which is equal to the size of each element (which is 1 byte in this case) multiplied by the number of elements in the array (which is 6 characters plus 1 null character, for a total of 7 elements).
